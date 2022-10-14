@@ -1,24 +1,26 @@
-# F2Eweek1
-
-# 作品說明
+# F2Eweek1 作品說明
 The F2E 全台公車動態時刻查詢應用服務…
 
-# 系統說明
-專案運行方式是使用 npm install、npm run serve…
+# run
+ npm install、npm run start
+ yarn 、 yarn start
 
 # Node.js 版本
 - v14.18.0
+
 # 資料夾說明
-views - 畫面放置處
-controllers
-modules
-…
+src 
+- pages - 畫面放置處
+- components - 組件
+- style - bootstrap 與樣式設定
+
 
 # 使用技術
-Vue Cli
-Axios
-…
+react app 
+typescript
+bootstrap
+style-components
+gasp
+
 
 # 第三方服務
-Algolia
-…
