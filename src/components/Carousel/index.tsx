@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { gsap } from 'gsap';
 
 const CarouselCss = styled.section`
-    height: 100vh;
+    height: 100%;
     overflow: hidden; /*隱藏超出外層容器的元素*/
     max-width: 100%;
   .loop {

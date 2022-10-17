@@ -15,16 +15,17 @@ const TimeLineBoxCss = styled.div`
 `
 
 const TimeLineBox = () => {
-    const box = useRef();
-
+    const box = useRef<GSAPTimeline>();
+    // const tl = useRef<GSAPTimeline | null>(null)
     useLayoutEffect(() => {
         let ctx = gsap.context(() => {
-            gsap.to(".box", {
-                y: 100,
-                repeat: -1,
-                repeatDelay: 1,
-                yoyo: true
-            });
+            // tl.current = gsap.timeline({ repeat: -1, repeatDelay: 0.5 })
+            gsap.timeline({ repeat: -1, repeatDelay: 0.5 })
+                .to(".box", { x: 100, duration: 1 }) // 水平方向に移動
+                .to(".box", { y: 100, duration: 1 }) // 垂直方向に移動
+                .to(".box", { rotation: 360, duration: 1 }) // 回転
+                .to(".box", { x: 0, duration: 1 }) // 水平方向に移動
+                .to(".box", { y: 0, duration: 1 }); // 垂直方向に移動
         }, box);
 
         return () => ctx.revert();
