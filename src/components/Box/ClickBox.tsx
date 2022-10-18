@@ -35,7 +35,6 @@ function ClickBox() {
     useLayoutEffect(() => {
         const ctx = gsap.context(() => {
             // add a box and circle animation to our timeline and play on first render
-            console.log("creating timeline");
             tl.current && tl.current.progress(0).kill();
             tl.current = gsap.timeline()
                 .to(".box", {

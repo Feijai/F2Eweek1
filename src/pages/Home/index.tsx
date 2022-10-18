@@ -12,6 +12,7 @@ import TypeA from '../../components/ScrollTrigger/TypeA'
 import TypeB from '../../components/ScrollTrigger/TypeB'
 import TypeC from '../../components/ScrollTrigger/TypeC'
 import ShowText from '../../components/TextAnimate/ShowText'
+import AnimateBox from '../../components/Box/AnimateBox'
 // import { DemoCubesWorld } from '../../components/Animate/DemoCubes'
 
 const HomeCss = styled.div`
@@ -37,9 +38,15 @@ export default function Home() {
             <div className='mt-5'>
                 <ShowText />
             </div>
+
             <div className='mt-5'>
                 <TypeA />
             </div>
+
+            <div className='mt-5'>
+                <AnimateBox />
+            </div>
+            
             <div className='mt-5'>
                 <Carousel />
             </div>
