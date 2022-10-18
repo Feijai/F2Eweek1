@@ -76,25 +76,25 @@ overflow: hidden;
     color: #ffa09d
   }
 
-.section4 {
-  min-height: 100vh
-}
 `
 
-gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
 
 export default function TypeA() {
     const scrollTypea = useRef();
 
     useLayoutEffect(() => {
+        gsap.registerPlugin(ScrollTrigger, TextPlugin);
+
         let ctx = gsap.context(() => {
             gsap.timeline({
                 scrollTrigger: {
                     trigger: ".section3",
                     pin: true,
-                    // markers: true, // 標記
+                    markers: true, // 標記
                     scrub: true,
+                    start: "100", // when the top of the trigger hits the top of the viewport
+                    end: "+=200", // end after scrolling 500px beyond the start
                 }
             })
                 .to(".gate-left-1", { yPercent: "-100" })
