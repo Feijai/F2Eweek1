@@ -1,6 +1,6 @@
 # F2Eweek1 作品說明
 The F2E 練習
-gitPage : https://feijai.github.io/f2eweek1/
+gitPage : https://feijai.github.io/f2eweek1practice/
 # run
  npm install、npm run start
  yarn 、 yarn start
